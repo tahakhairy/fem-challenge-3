@@ -1,0 +1,235 @@
+body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+        url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, right top;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+:root {
+    /* PRIMARY */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* NEUTRAL */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    padding: 0 132px;
+}
+
+main, section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro {
+    width: 70%;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 12px;
+    line-height: 1;
+    color: var(--very-dark-magenta);
+}
+
+.intro p {
+    margin: 12px;
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.benchmarks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    padding: 20px 0px;
+}
+
+.benchmarks li {
+    background: var(--light-grayish-magenta);
+    border-radius: 8px;
+    color: var(--very-dark-magenta);
+    font-weight: bold;
+    margin: 12px 0;
+    padding: 18px 0px;
+    text-align: left;
+    width: 100%;
+}
+
+li.first {
+    margin-left: -120px;
+    margin-right: 120px;
+}
+
+li.second {
+    margin-left: -60px;
+    margin-right: 60px;
+}
+
+.benchmarks li span {
+    margin: 8px 24px;
+}
+
+.reviews {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.rev-card {
+    display: block;
+    text-align: left;
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+    padding: 30px 24px;
+    margin: 30px 15px;
+    color: white;
+    width: calc(85% / 3);
+}
+
+.first-card {
+    margin-top: -45px;
+}
+
+.second-card {
+    margin-top: -15px;
+}
+
+.rev-card p {
+    line-height: 1.8;
+    font-size: 13px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.customer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.customer div {
+    padding: 8px;
+    margin-left: 12px;
+}
+
+.customer div span {
+    color: var(--soft-pink);
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.customer img {
+    width: 14%;
+    border-radius: 50%;
+}
+
+@media (max-width: 1028px) {
+
+    body {
+        padding: 12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/bg-pattern-top-mobile.svg),
+            url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
+
+    main, section {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 12px;
+        text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 20px;
+        margin-top: 70px;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    .benchmarks li {
+        width: 100%;
+        text-align: center;
+        margin: 12px;
+    }
+
+    li.first {
+        margin: 12px;
+    }
+
+    li.second {
+        margin: 12px;
+    }
+
+    .reviews {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .rev-card {
+        width: 100%;
+        margin: 12px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 12px;
+    opacity: .8;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
